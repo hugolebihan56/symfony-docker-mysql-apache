@@ -1,9 +1,7 @@
 
-# Symfony 6 + PHP 8.0.13 with Docker
+# Docker Symfony Mysql Apache phpMyAdmin
 
-**ONLY for DEV, not for production**
-
-A very simple Docker-compose to discover Symfony 6 with PHP 8.0.13 in 5 minutes
+A very simple Docker-compose to discover Symfony 6 with PHP 8.0.13
 ## Run Locally
 
 Clone the project
@@ -45,7 +43,7 @@ Create an account (identical to your local session)
 If you need a database, modify the .env file like this example:
 
 ```yaml
-  DATABASE_URL="postgresql://symfony:ChangeMe@database:5432/app?serverVersion=13&charset=utf8"
+  DATABASE_URL=mysql://root:password@database:3306/main?serverVersion=5.7
 ```
 
 ## Ready to use with
@@ -57,18 +55,10 @@ This docker-compose provides you :
     - Symfony CLI
     - and some other php extentions
     - nodejs, npm, yarn
-- postgres:13-alpine
-- mailcatcher
+- mysql
 
 
-## Requirements
-
-Out of the box, this docker-compose is designed for a Linux operating system, provide adaptations for a Mac or Windows environment.
-
-- Linux (Ubuntu 20.04 or other)
-- Docker
-- Docker-compose
 ## Author
 
-- [@yoanbernabeu](https://github.com/yoanbernabeu)
-"# symfony-docker-mysql-apache" 
+- [@hugolebihan56](https://github.com/hugolebihan56)
+
